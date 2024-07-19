@@ -15,25 +15,28 @@ PipResolver is a tool to find compatible versions of Python packages based on th
    pip install -r requirements.txt
    ```
 
+3. Create a symbolic link to the pipresolver script:
+   ```
+   sudo ln -s /path/to/pipresolver/pipresolver /usr/local/bin/pipresolver
+   ```
+   Replace `/path/to/pipresolver` with the actual path to the cloned repository.
+
 ## Usage
 
-Run the script with the following command:
-
+After creating the symbolic link, you can run PipResolver from anywhere using:
 ```
-python pipresolver.py <package> <dependency> <max_version>
+pipresolver <package> <dependency> <max_version>
 ```
 
 For example:
-
 ```
-python pipresolver.py gradio typer 0.9.0
+pipresolver gradio typer 0.9.0
 ```
-
 This will find the newest version of gradio that depends on typer 0.9.0 or lower.
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please feel free to submit a Pull Request. If you'd like to contribute to making PipResolver available on PyPI, your efforts would be greatly appreciated.
 
 ## License
 
